@@ -46,6 +46,7 @@ a:active {
 .style16 {font-size: large}
 .style18 {font-size: x-small}
 .style20 {color: #666666; font-family: Arial, Helvetica, sans-serif;}
+.menuitem {color: #666666; font-family: Arial, Helvetica, sans-serif;}
 -->
 </style>
 </head>
@@ -57,14 +58,13 @@ a:active {
     <td align="left" class="style6">About</td>
   </tr>
   <tr>
-    <td width="150" align="left" valign="top"><p align="center">      <span class="style20"><a href="../index.html">Home</a></span></p>
-      <p align="center" class="style20"><a href="../about/index.html">About</a></p>
-    <p align="center" class="style20"><a href="../tutorial/index.html">Tutorial</a></p>
-    <p align="center" class="style20"><a href="../code/index.html">Code</a></p>
-    <p align="center" class="style20"><a href="../bibliography/index.html">Bibliography</a></p>
-    <p align="center" class="style20"><a href="../project/index.html">Resources</a></p>
-    <p align="center"><span class="style20"><a href="../project/index.html">Project</a></span><span class="style3"><br />
-    </span></p></td>
+    <td align="left" valign="top">
+      <p align="center" class="menuitem"><a href="../index.html">Home</a></p>
+      <p align="center" class="menuitem"><a href="../about/index.html"><b>About</b></a></p>
+      <p align="center" class="menuitem"><a href="../code/index.html">Code</a></p>
+      <p align="center" class="menuitem"><a href="../bibliography/index.html">Bibliography</a></p>
+      <p align="center" class="menuitem"><a href="../project/index.html">Project</a></p>
+    </td>
     <td align="left" valign="top" bordercolor="#FF6600" bgcolor="#FFF5D7"><p class="style7"><span class="style12">What is MCTS?</span></p>
       <p class="style7">Monte Carlo Tree Search (MCTS) is a method for making optimal decisions in artificial intelligence (AI) problems, typically move planning in combinatorial games. It combines the generality of random simulation with the precision of tree search.</p>
       <p class="style7">Research interest in MCTS has risen sharply   due to its spectacular success with computer Go and  potential application to a number of other difficult problems. Its application extends beyond games, and MCTS can theoretically be applied to any domain that can be described in terms of {<em>state</em>, <em>action</em>} pairs and  simulation used to forecast outcomes.<br />  
@@ -149,8 +149,16 @@ MCTS search can take many iterations to converge to a good solution, which can b
     <p class="style12">Research Interest</p>
     <p class="style7">There have been over 150 research papers written on topics related to  MCTS since its inception a few years ago,  averaging out to over one new publication every fortnight. These include some 50 suggested variations, enhancements and optimisations to the algorithm, which would not be far from the total  number of enhancements suggested for traditional tree search  since its introduction in 1928.</p>
     <p class="style7">This new field of study is currently a hot research topic in AI, with  many open  research questions still to be addressed and answered.</p>
-    <p class="style7"></p></td>
-  </tr>
+    <p class="style7"></p>
+      <hr noshade="noshade" />
+      <p class="style12">MCTS: State of the Art</p>
+      <p class="style7">Imperial College London held the first international MCTS workshop in August 2010 on the theme of <em>MCTS: State of the Art</em>. Speakers included:</p>
+      <p class="style7">O. Teytaud, &quot;State of the Art: What is MCTS, where is it now, and where is it going?” 2010 [Online]. Available: <a href="http://www.aigamesnetwork.org/_media/main:events:london2010.pdf">http://www.aigamesnetwork.org/_media/main:events:london2010.pdf</a></p>
+      <p class="style7"> M. Müller, “Challenges in Monte Carlo Tree Search,” 2010 [Online]. Available: <a href="http://www.aigamesnetwork.org/_media/main:events:london2010-mcts-challenges.pdf">http://www.aigamesnetwork.org/_media/main:events:london2010-mcts-challenges.pdf</a></p>
+      <p class="style7"> R.  Hayward, “MoHex: Computer Hex world champion,” 2010 [Online]. Available: <a href="http://www.aigamesnetwork.org/_media/main:events:mohextalk.pdf">http://www.aigamesnetwork.org/_media/main:events:mohextalk.pdf </a></p>
+      <p class="style7">H. Finnsson and Y.  Björnsson, “CadiaPlayer: MCTS in General Game Playing,” 2010 [Online]. Available: <a href="http://www.aigamesnetwork.org/_media/main:events:cadiaplayer_lic_slides_print.pdf">http://www.aigamesnetwork.org/_media/main:events:cadiaplayer_lic_slides_print.pdf</a></p>
+      <p class="style7"> A.  Rimmel, “Havannah, Monte Carlo Enhancements and Linear Transforms,” 2010 [Online]. Available: <a href="http://www.aigamesnetwork.org/_media/main:events:presmctsworkshop_rimmel.pdf">http://www.aigamesnetwork.org/_media/main:events:presmctsworkshop_rimmel.pdf</a><br />
+  </td></tr>
 </table>
 </body>
 </html>
