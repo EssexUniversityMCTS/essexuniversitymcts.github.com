@@ -5,7 +5,11 @@ function BibEntry(type, key)
 {
 	this.bibtexType = type;
 	this.bibtexKey = key;
-	this.isNonMcts = false;
+}
+
+BibEntry.prototype.hasKeyword = function(word)
+{
+	return "keywords" in this && this.keywords.indexOf(word) != -1;
 }
 
 BibEntry.prototype.isPpt = function()
@@ -168,9 +172,9 @@ function parseBib(text)
 			if (key in currentEntry)
 				console.log("Duplicate key " + key + " on bib line " + lineNumber);
 			
-			if (key == "keywords" && value.indexOf("000nonmcts") != -1)
-				currentEntry.isNonMcts = true;
-				
+			if (key == "keywords")
+				currentEntry.keywords = value;
+			
 			if ($.inArray(key, ignoreKeys) == -1)
 			{
 				currentEntry[key] = parseValue(value, key);

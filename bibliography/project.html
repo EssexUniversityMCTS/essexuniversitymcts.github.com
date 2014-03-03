@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Monte Carlo Tree Search - Bibliography</title>
+    <title>Monte Carlo Tree Search - Project publications</title>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 	<script src="jquery-1.11.0.min.js"></script>
 	<script src="jquery.sortChildren.js"></script>
@@ -9,7 +9,7 @@
 	<script src="showbib.js"></script>
 	<script>
 		$(document).ready(function(){
-			showBib(function(e) { return !e.hasKeyword("000nonmcts") && !e.isPpt(); });
+			showBib(function(e) { return e.hasKeyword("uctfgab"); });
 		});
 	</script>
 </head>
@@ -25,12 +25,12 @@
 			<p align="center" class="menuitem"><a href="../index.html">Home</a></p>
 			<p align="center" class="menuitem"><a href="../about/index.html">About</a></p>
 			<p align="center" class="menuitem"><a href="../code/index.html">Code</a></p>
-			<p align="center" class="menuitem"><a href="../bibliography/index.html"><b>Bibliography</b></a></p>
+			<p align="center" class="menuitem"><a href="../bibliography/index.html">Bibliography</a></p>
 			<p align="center" class="menuitem"><a href="../project/index.html">Project</a></p>
-			<p align="center" class="menuitem"><a href="../bibliography/project.html">Publications</a></p>
+			<p align="center" class="menuitem"><a href="../bibliography/project.html"><b>Publications</b></a></p>
 		</td>
-		<td valign="top" bordercolor="#FF6600" bgcolor="#FFF5D7"><p class="style7"> This bibliography contains all known publications related to MCTS (<span id="refcount">?</span> at last count). Additional  material such as  presentations, web pages, repositories and so on may be found in the <a href="../resources/index.html">Resources</a> page.</p>
-			<p class="style7">Please submit new entries <a href="mailto:edward.powley@york.ac.uk">to us</a> with complete reference details and associated URL.</p>
+		<td valign="top" bordercolor="#FF6600" bgcolor="#FFF5D7">
+			<p class="style7"> This bibliography contains all publications from the "UCT for Games and Beyond" project.</p>
 			<hr noshade="noshade" />
 			<ul class="links" id="toplinks">
 				<li id="toggleIcons"><a onclick="toggleIcons()"><span id="showhidetext">Hide</span> icons</a></li>
