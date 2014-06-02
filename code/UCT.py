@@ -252,7 +252,7 @@ class OthelloState:
         """ Get the game result from the viewpoint of playerjm. 
         """
         jmcount = len([(x,y) for x in range(self.size) for y in range(self.size) if self.board[x][y] == playerjm])
-        notjmcount = len([(x,y) for x in range(self.size) for y in range(4) if self.board[x][y] == 3 - playerjm])
+        notjmcount = len([(x,y) for x in range(self.size) for y in range(self.size) if self.board[x][y] == 3 - playerjm])
         if jmcount > notjmcount: return 1.0
         elif notjmcount > jmcount: return 0.0
         else: return 0.5 # draw
