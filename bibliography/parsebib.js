@@ -34,7 +34,7 @@ function compareArrays(a, b)
 	if (a[0] == b[0])
 		return compareArrays(a.slice(1), b.slice(1))
 	else
-		return (a[0] > b[0]) ? 1 : -1;
+		return (a[0].toUpperCase() > b[0].toUpperCase()) ? 1 : -1;
 }
 
 function compareBibEntries(a, b, keys)

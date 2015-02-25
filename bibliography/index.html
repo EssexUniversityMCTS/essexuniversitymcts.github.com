@@ -9,7 +9,7 @@
 	<script src="showbib.js"></script>
 	<script>
 		$(document).ready(function(){
-			showBib(function(e) { return !e.hasKeyword("000nonmcts") && !e.isPpt(); });
+			showBib(function(e) { return !e.hasKeyword("000nonmcts") && !e.hasKeyword("hidefromweb") && !e.isPpt(); });
 		});
 	</script>
 </head>
